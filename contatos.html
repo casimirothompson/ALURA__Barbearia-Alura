@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html alng="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produtos</title>
+    <link rel="stylesheet" href="pasta-css/reset.css">
+    <link rel="stylesheet" href="pasta-css/contato.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="fotos/logo.png" alt="logo-da-barbearia"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">produtos</a></li>
+                    <li><a href="contatos.html">contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form action="">
+            <ul>
+                <li>
+                    <label for="nomeSobrenome">Nome completo</label>
+                    <input type="text" id="nomeSobrenome" class="input-padrao" required placeholder="Ricardo Alberto">
+                </li>
+
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="nome@gmail.com">
+                </li>
+
+                <li>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(12)34567-8901">
+                </li>
+
+                <li>
+                    <label for="comentario">Comentario</label>
+                    <textarea name="" id="comentario" cols="70" rows="10" class="input-padrao" required
+                        placeholder="escrever"></textarea>
+                </li>
+            </ul>
+
+            <fieldset class="container-checkbox">
+                <legend>como prefere nosso contato?</legend>
+                <label for="radio-email"><input type="radio" value="email" name="contato" id="radio-email">Email</label>
+
+                <label for="radio-telefone"><input type="radio" value="telefone" name="contato"
+                        id="radio-telefone">Telefone</label>
+
+                <label for="radio-whatsapp"><input type="radio" value="whatsapp" name="contato" id="radio-whatsapp"
+                        checked>Whatsapp</label>
+            </fieldset>
+
+            <fieldset class="container-checkbox">
+                <legend>qual horario prefere ser atendido?</legend>
+                <select name="" id="" required>
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>gostaria de receber nosso notificações por
+                email?</label>
+            <fieldset class="campo-botao-table">
+                <input type="button" value="enviar formulario" class="enviar">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>dias</th>
+                            <th>horarios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>segunda</td>
+                            <td>das 8:00 ás 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>quarta</td>
+                            <td>das 08:00 ás 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>sexta</td>
+                            <td>das 08:00 ás 20:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <img src="fotos/logo-branco.png" alt="logo branco">
+        <p class="copyright">&copy; copyright barbearia alura - 2019</p>
+    </footer>
+</body>
+
+</html>

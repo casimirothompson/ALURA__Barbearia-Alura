@@ -1,0 +1,222 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: #bbbbbb;
+	padding: 20px 0;
+	;
+}
+
+.caixa {
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C68A8A;
+	text-decoration: underline;
+}
+
+/* CONTEUDO PRINCIPAL(?) */
+/* main{
+	width:940px;
+	margin:0 auto;
+} */
+
+.banner {
+	width: 100%;
+}
+
+.principal {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 1em;
+	clear: left;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.principal p {
+	background: #FEFEFE;
+	margin-bottom: 1em;
+}
+
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p {
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.divisao-mapa {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background-color: #888888;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+.itens:before {
+	content: "★";
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.imagem-beneficios {
+	width: 60%;
+	transition: 200ms;
+	opacity: 1;
+	box-shadow: 10px 10px 10px 10px #000;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.7;
+}
+
+
+.video {
+	width: 560px;
+	margin: 1em auto;
+}
+
+/* RODAPÉ */
+
+footer {
+	background: url("../fotos/bg.jpg");
+	text-align: center;
+	padding: 20px 0;
+}
+
+.copyright {
+	color: #fff;
+	margin-top: 20px;
+	font-size: 13px;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 480px) {
+
+	.caixa,
+	.principal,
+	.conteudo-beneficios,
+	.mapa-conteudo,
+	.divisao-mapa,
+	.beneficios,
+	.video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	.caixa nav {
+		position: static;
+		text-align: center;
+	}
+
+	.caixa a {
+		font-size: 18px;
+	}
+
+	.utensilios {
+		margin: 0 0.5em;
+		float: right;
+		width: 38%;
+	}
+
+	.principal {
+		margin-top: 2em;
+	}
+
+	.principal p {
+		margin: 0 0.8em 1em;
+		font-size: 12px;
+	}
+
+	.mapa {
+		padding: 3em 0 1em;
+	}
+
+	.mapa p {
+		margin-bottom: 2em;
+	}
+
+	.beneficios {
+		padding-bottom: 0.1em;
+	}
+
+	.conteudo-beneficios {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		margin-bottom: 2em;
+	}
+
+	.imagem-beneficios {
+		width: 47%;
+		box-shadow: 8px 8px 5px 2px #000;
+	}
+}
